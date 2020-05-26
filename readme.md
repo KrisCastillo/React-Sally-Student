@@ -1,0 +1,1 @@
+Can you remember the start of your Thinkful journey, back to the resumé you built for Sally Student? We'd like you to use the same fictional character and rebuild the resumé with React.

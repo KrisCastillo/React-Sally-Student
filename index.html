@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="style.css">
+      <title>Sally Student Resume</title>
+    </head>
+
+    <body>
+      <div id='application-root'></div>
+
+        <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+  
+        <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+        </script>
+  
+        <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+        </script>
+
+        <script type="text/babel">
+          function App(props) {
+              return (
+              <div>
+                  <header>
+                      <h1>{props.name}</h1>
+                      <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnLuC9peqa8_0GOCFT6m2YS2c65RVJgtIZQyA9EA7obB_sKqz2&s"} alt="Sally Student" width="200" height="200" />
+                  </header>
+
+                  <main>
+                      <section>
+                          <h2>Contact Information</h2>
+                          <address>
+                              <a href={`mailto:sallystudent@gmail.com`}>sallystudent@gmail.com</a><br/>(311) 555-2368
+                          </address>
+                      </section>
+
+                      <section>
+                          <h2>Profile</h2>
+                          <p>Junior web developer with experience in structuring, developing and implementing<br/>
+                            websites. Innovative use of technology. Able to complete projects efficiently and satisfy<br/>
+                            customers with attractive, user friendly websides.</p>
+                      </section>
+                      
+                      <section>
+                          <h2>Education</h2>
+                          <p>2003 University of Tennesse - Memphis, TN.</p>
+                          <p>Bachelor of Science Computer Science</p>
+                          <ul> 
+                            <li> Graduated Summa Cum Laude. </li> 
+                            <li> Coursework in Programming. Data Structures and Computer Architecture </li> 
+                          </ul>
+                      </section>
+
+                      <section>
+                          <h2>Employment History</h2>
+                          <p>Web Developer, 07/2009 - Current</p>
+                          <p>NorthWest Webside Development - Grand Rapids, CA</p>
+                          <ul> 
+                            <li> Meet with clients to gather requirements, design sites, and outline schedules. </li> 
+                            <li> Manage web projects with 2-5 developers</li> 
+                            <li> Develop concepts, control project flow, and ensure deliverable milestones are met.</li>
+                          </ul>
+                          
+                          <p>Contract Web Developer, 07/2005 - 02/2009</p>
+                          <p>Self-Employed - Grand Rapids. TN</p>
+                          <ul> 
+                            <li> Designed websites for clients on a contract. </li> 
+                            <li> Developed project scope and created concepts.</li> 
+                            <li> Maintained schedules and assured on-time delivery of content.</li>
+                          </ul>
+                      </section>
+                  </main>
+              </div>
+              );
+          }
+
+          ReactDOM.render(
+              <App name="Sally Student" />,
+              document.querySelector('#application-root')
+          );
+        </script>
+    </body>
+
+</html>
